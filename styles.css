@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaeaea;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -10,12 +10,13 @@ body {
     text-align: center;
     border-bottom: 2px solid #ccc;
 }
+
 .header-container h1 {
     font-size: 24px;
     font-weight: bold;
 }
 
-.feed {
+.post {
     width: 600px;
     margin: 20px auto;
 }
@@ -23,25 +24,39 @@ body {
 .flex-container {
     background: white;
     margin-bottom: 20px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 .post-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    justify-content: space-between;
 }
 
-.post-header h2 {
-    font-size: 18px;
+.h2 {
+    font-size: 15px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.h2 h2 {
     margin: 0;
 }
-.post-header .date {
-    font-size: 14px;
-    color: #888;
+
+.fa-solid.fa-circle-user {
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+
+.post-header.wifi {
+    font-size: 18px;
+    display: flex;
 }
 
 .flex-container img {
@@ -50,6 +65,28 @@ body {
     object-position: center top;
     object-fit: cover;
     display: block;
+}
+
+.icons {
+    padding: 10px 15px;
+    font-size: 30px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons.bookmark {
+    padding: 10px 15px;
+    font-size: 30px;
+    color: #444;
+    display: flex;
+}
+
+
+.likes {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #444;
 }
 
 .photo-caption {
